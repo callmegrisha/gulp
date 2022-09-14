@@ -1,0 +1,7 @@
+@mixin display-grid($colCount: 12, $frCount: 1, $columnGap: 0, $rowGap: 0)
+  display: grid
+  grid-template-columns: repeat($colCount, $frCount + fr)
+  column-gap: $columnGap + px
+  row-gap: $rowGap + px
+
+// example: @include display-grid(2, 1, 20, 20)

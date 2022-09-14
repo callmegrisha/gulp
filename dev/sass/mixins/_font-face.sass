@@ -1,0 +1,8 @@
+@mixin font-face($name, $weight, $src)
+  @font-face
+    font-family: $name
+    font-weight: $weight
+    font-display: swap
+    src: url($src + ".woff2") format("woff2"), url($src + ".woff") format("woff")
+
+// example: @include font-face("Inter", 700, "../fonts/Inter-Black")
